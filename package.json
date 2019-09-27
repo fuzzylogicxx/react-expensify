@@ -11,6 +11,7 @@
     "build:prod": "webpack -p --env production",
     "dev-server": "webpack-dev-server",
     "start": "node server/server.js",
+    "test": "jest",
     "heroku-postbuild": "yarn run build:prod"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
     "babel-preset-react": "6.24.1",
     "css-loader": "^3.2.0",
     "express": "^4.17.1",
+    "jest": "20.0.4",
     "live-server": "^1.2.1",
     "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
