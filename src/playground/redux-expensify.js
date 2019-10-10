@@ -44,6 +44,7 @@ const expensesReducer = (state = expensesReducerDefaultState, action) => {
                 action.expense
             ];
         case 'REMOVE_EXPENSE':
+            // note the object destructuring on the argument to make it less verbose than item.id
             return state.filter( ( { id } ) => id !== action.expense.id);
         default:
             return state;
@@ -92,3 +93,14 @@ const demoState = {
 
     }
 };
+
+
+
+const user = {
+    name: 'Larry', 
+    age: 43
+};
+
+console.log({
+    ...user
+});
