@@ -7,7 +7,7 @@ module.exports = (env) => {
     
     console.log(env);
     return {
-        entry: './src/playground/redux-101.js', 
+        entry: './src/playground/redux-expensify.js', 
         output: {
             path: path.join(__dirname, 'public'), 
             filename: 'bundle.js'
